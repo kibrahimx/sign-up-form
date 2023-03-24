@@ -17,42 +17,47 @@ main {
     background-color: whitesmoke;
 }
 
-.left_container {
+input:focus {
+    outline: 2px solid blue;
+}
+
+.left-container {
     width: 35%;
     height: 100%;
 }
 
-.right_container {
+.right-container {
     display: flex;
     flex-direction: column;
-    justify-content: space-evenly;
+    justify-content: center;
     width: 65%;
     height: 100%;
 }
 
-#form_container {
-    background-color: blueviolet;
-    padding-left: 5%;
+.left {
+    padding-left: 3rem;
 }
 
 form button {
     cursor: pointer;
+    font-family: 'Poppins', sans-serif;
     background-color: blue;
     color: white;
-    padding: 1rem;
-    border-radius: 1rem;
+    padding: 10px 20px;
+    border-radius: 0.5rem;
     border-style: none;
 }
 
-#inputs_container {
+#inputs-container {
     display: flex;
+    background-color: blueviolet;
     flex-flow: row wrap;
     gap: 1rem;
     font-size: 1rem;
     width: 65%;
 }
 
-#inputs_container > div {
+#inputs-container > div {
     display: flex;
     flex-flow: column wrap;
     width: 30%;
